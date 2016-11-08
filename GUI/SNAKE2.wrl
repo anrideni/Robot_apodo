@@ -1,0 +1,791 @@
+#VRML V2.0 utf8
+
+#Created with V-Realm Builder v2.0
+#Integrated Data Systems Inc.
+#www.ids-net.com
+
+
+DEF Atras Viewpoint {
+	orientation	0 1 0  1.85354
+	position	97 0.8 -12.7
+	description	"Atras"
+}
+Background {
+	groundAngle	[ 0.9, 1.5, 1.57 ]
+	groundColor	[ 0 0.8 0,
+			  0.174249 0.82 0.187362,
+			  0.467223 0.82 0.445801,
+			  0.621997 0.67 0.600279 ]
+	skyAngle	[ 0.1, 1.2, 1.57 ]
+	skyColor	[ 0.76238 0.8 0.1427,
+			  0.277798 0.219779 0.7,
+			  0.222549 0.390234 0.7,
+			  0.60094 0.662637 0.69 ]
+}
+DEF PISO Transform {
+	translation	35 -5.3 0
+	children Shape {
+		appearance	Appearance {
+			material	Material {
+				ambientIntensity	0.1
+				diffuseColor	0.9 0.767329 0.619635
+			}
+
+		}
+
+		geometry	Box {
+			size	70 0.5 30
+		}
+
+	}
+}
+DEF Superior Viewpoint {
+	orientation	-0.57735 0.57735 0.57735  2.0944
+	position	35 100 0
+	description	"Superior"
+}
+DEF Frente Viewpoint {
+	position	35 2 70
+	description	"Frente"
+}
+DEF SNAKE Transform {
+	translation	0 0 0
+	rotation	0 0 1  0.785398
+	children [ 
+	    DEF ARTICULACION1 Transform {
+		    translation	5 0 0
+		    rotation	0 0 -1  0.785398
+		    children [ 
+			DEF ARTICULACION2 Transform {
+				translation	10 0 0
+				rotation	0 0 -1  0.785398
+				children [ 
+				    DEF ARTICULACION3 Transform {
+					    translation	10 0 0
+					    rotation	0 0 1  0.785398
+					    children [ 
+						DEF ARTICULACION4 Transform {
+							translation	10 0 0
+							rotation	0 0 1  0.785398
+							children [ 
+							    DEF ARTICULACION5 Transform {
+								    translation	10 0 0
+								    rotation	0 0 -1  0.785398
+								    children [ 
+									DEF ARTICULACION6 Transform {
+										translation	10 0 0
+										rotation	0 0 -1  0.785398
+										children [ 
+										    DEF ARTICULACION7 Transform {
+											    translation	10 0 0
+											    rotation	0 0 1  0.785398
+											    children DEF p2 Transform {
+												    translation	2.7 0 0
+												    rotation	0 0.707107 0.707107  3.14159
+												    scale	2.4 2.4 2.4
+												    children Shape {
+													    appearance	Appearance {
+														    material	Material {
+															    ambientIntensity	0.2
+															    diffuseColor	0.8 0.0814471 0.0970393
+														    }
+
+													    }
+
+													    geometry	Extrusion {
+														    beginCap	TRUE
+														    endCap	TRUE
+														    ccw	TRUE
+														    convex	TRUE
+														    creaseAngle	0
+														    solid	TRUE
+														    crossSection	[ 1.07327 0.603712,
+																      1.50257 0.281732,
+																      1.50257 -0.308564,
+																      1.04643 -0.576881,
+																      -1 -1,
+																      -1 1,
+																      1.07327 0.603712 ]
+														    orientation	[ 0 0 1  0,
+																      0 0 1  0 ]
+														    scale	[ 1 1,
+																      1 1 ]
+														    spine	[ 0 0 0,
+																      0 1 0 ]
+													    }
+
+												    }
+											    }
+										    }
+
+										    DEF modulo6 Transform {
+											    children [ 
+												DEF p1 Transform {
+													translation	7.3 0 0
+													rotation	0 0.707107 0.707107  3.14159
+													scale	2.4 2.4 2.4
+													children [ 
+													    Shape {
+														    appearance	Appearance {
+															    material	Material {
+																    ambientIntensity	0.2
+																    diffuseColor	0.8 0.044556 0.122662
+															    }
+
+														    }
+
+														    geometry	Extrusion {
+															    beginCap	TRUE
+															    endCap	TRUE
+															    ccw	TRUE
+															    convex	TRUE
+															    creaseAngle	0
+															    solid	TRUE
+															    crossSection	[ 1 1,
+																	      1 -1,
+																	      -1.1001 -0.41589,
+																	      -1.44891 -0.120743,
+																	      -1.44891 0.335395,
+																	      -1.1001 0.603712,
+																	      1 1 ]
+															    orientation	[ 0 1 0  0.0174557,
+																	      0 0 1  0 ]
+															    scale	[ 1 1,
+																	      1 1 ]
+															    spine	[ 0 0 0,
+																	      0 1 0 ]
+														    }
+
+													    }
+
+													    DEF tornillo Transform {
+														    translation	-0.9 0.6 0
+														    scale	0.1 0.6 0.1
+														    children Shape {
+															    appearance	Appearance {
+																    material	Material {
+																	    ambientIntensity	0.2
+																	    diffuseColor	1 1 1
+																    }
+
+															    }
+
+															    geometry	Box {
+															    }
+
+														    }
+													    }
+													]
+												}
+
+												DEF p2 Transform {
+													translation	2.7 0 0
+													rotation	0 0.707107 0.707107  3.14159
+													scale	2.4 2.4 2.4
+													children Shape {
+														appearance	Appearance {
+															material	Material {
+																ambientIntensity	0.2
+																diffuseColor	0.8 0.0814471 0.0970393
+															}
+
+														}
+
+														geometry	Extrusion {
+															beginCap	TRUE
+															endCap	TRUE
+															ccw	TRUE
+															convex	TRUE
+															creaseAngle	0
+															solid	TRUE
+															crossSection	[ 1.07327 0.603712,
+																	  1.50257 0.281732,
+																	  1.50257 -0.308564,
+																	  1.04643 -0.576881,
+																	  -1 -1,
+																	  -1 1,
+																	  1.07327 0.603712 ]
+															orientation	[ 0 0 1  0,
+																	  0 0 1  0 ]
+															scale	[ 1 1,
+																	  1 1 ]
+															spine	[ 0 0 0,
+																	  0 1 0 ]
+														}
+
+													}
+												}
+											    ]
+										    }
+										]
+									}
+
+									DEF modulo5 Transform {
+										children [ 
+										    DEF p1 Transform {
+											    translation	7.3 0 0
+											    rotation	0 0.707107 0.707107  3.14159
+											    scale	2.4 2.4 2.4
+											    children [ 
+												Shape {
+													appearance	Appearance {
+														material	Material {
+															ambientIntensity	0.2
+															diffuseColor	0.8 0.044556 0.122662
+														}
+
+													}
+
+													geometry	Extrusion {
+														beginCap	TRUE
+														endCap	TRUE
+														ccw	TRUE
+														convex	TRUE
+														creaseAngle	0
+														solid	TRUE
+														crossSection	[ 1 1,
+																  1 -1,
+																  -1.1001 -0.41589,
+																  -1.44891 -0.120743,
+																  -1.44891 0.335395,
+																  -1.1001 0.603712,
+																  1 1 ]
+														orientation	[ 0 1 0  0.0174557,
+																  0 0 1  0 ]
+														scale	[ 1 1,
+																  1 1 ]
+														spine	[ 0 0 0,
+																  0 1 0 ]
+													}
+
+												}
+
+												DEF tornillo Transform {
+													translation	-0.9 0.6 0
+													scale	0.1 0.6 0.1
+													children Shape {
+														appearance	Appearance {
+															material	Material {
+																ambientIntensity	0.2
+																diffuseColor	1 1 1
+															}
+
+														}
+
+														geometry	Box {
+														}
+
+													}
+												}
+											    ]
+										    }
+
+										    DEF p2 Transform {
+											    translation	2.7 0 0
+											    rotation	0 0.707107 0.707107  3.14159
+											    scale	2.4 2.4 2.4
+											    children Shape {
+												    appearance	Appearance {
+													    material	Material {
+														    ambientIntensity	0.2
+														    diffuseColor	0.8 0.0814471 0.0970393
+													    }
+
+												    }
+
+												    geometry	Extrusion {
+													    beginCap	TRUE
+													    endCap	TRUE
+													    ccw	TRUE
+													    convex	TRUE
+													    creaseAngle	0
+													    solid	TRUE
+													    crossSection	[ 1.07327 0.603712,
+															      1.50257 0.281732,
+															      1.50257 -0.308564,
+															      1.04643 -0.576881,
+															      -1 -1,
+															      -1 1,
+															      1.07327 0.603712 ]
+													    orientation	[ 0 0 1  0,
+															      0 0 1  0 ]
+													    scale	[ 1 1,
+															      1 1 ]
+													    spine	[ 0 0 0,
+															      0 1 0 ]
+												    }
+
+											    }
+										    }
+										]
+									}
+								    ]
+							    }
+
+							    DEF modulo4 Transform {
+								    children [ 
+									DEF p1 Transform {
+										translation	7.3 0 0
+										rotation	0 0.707107 0.707107  3.14159
+										scale	2.4 2.4 2.4
+										children [ 
+										    Shape {
+											    appearance	Appearance {
+												    material	Material {
+													    ambientIntensity	0.2
+													    diffuseColor	0.8 0.044556 0.122662
+												    }
+
+											    }
+
+											    geometry	Extrusion {
+												    beginCap	TRUE
+												    endCap	TRUE
+												    ccw	TRUE
+												    convex	TRUE
+												    creaseAngle	0
+												    solid	TRUE
+												    crossSection	[ 1 1,
+														      1 -1,
+														      -1.1001 -0.41589,
+														      -1.44891 -0.120743,
+														      -1.44891 0.335395,
+														      -1.1001 0.603712,
+														      1 1 ]
+												    orientation	[ 0 1 0  0.0174557,
+														      0 0 1  0 ]
+												    scale	[ 1 1,
+														      1 1 ]
+												    spine	[ 0 0 0,
+														      0 1 0 ]
+											    }
+
+										    }
+
+										    DEF tornillo Transform {
+											    translation	-0.9 0.6 0
+											    scale	0.1 0.6 0.1
+											    children Shape {
+												    appearance	Appearance {
+													    material	Material {
+														    ambientIntensity	0.2
+														    diffuseColor	1 1 1
+													    }
+
+												    }
+
+												    geometry	Box {
+												    }
+
+											    }
+										    }
+										]
+									}
+
+									DEF p2 Transform {
+										translation	2.7 0 0
+										rotation	0 0.707107 0.707107  3.14159
+										scale	2.4 2.4 2.4
+										children Shape {
+											appearance	Appearance {
+												material	Material {
+													ambientIntensity	0.2
+													diffuseColor	0.8 0.0814471 0.0970393
+												}
+
+											}
+
+											geometry	Extrusion {
+												beginCap	TRUE
+												endCap	TRUE
+												ccw	TRUE
+												convex	TRUE
+												creaseAngle	0
+												solid	TRUE
+												crossSection	[ 1.07327 0.603712,
+														  1.50257 0.281732,
+														  1.50257 -0.308564,
+														  1.04643 -0.576881,
+														  -1 -1,
+														  -1 1,
+														  1.07327 0.603712 ]
+												orientation	[ 0 0 1  0,
+														  0 0 1  0 ]
+												scale	[ 1 1,
+														  1 1 ]
+												spine	[ 0 0 0,
+														  0 1 0 ]
+											}
+
+										}
+									}
+								    ]
+							    }
+							]
+						}
+
+						DEF modulo3 Transform {
+							children [ 
+							    DEF p1 Transform {
+								    translation	7.3 0 0
+								    rotation	0 0.707107 0.707107  3.14159
+								    scale	2.4 2.4 2.4
+								    children [ 
+									Shape {
+										appearance	Appearance {
+											material	Material {
+												ambientIntensity	0.2
+												diffuseColor	0.8 0.044556 0.122662
+											}
+
+										}
+
+										geometry	Extrusion {
+											beginCap	TRUE
+											endCap	TRUE
+											ccw	TRUE
+											convex	TRUE
+											creaseAngle	0
+											solid	TRUE
+											crossSection	[ 1 1,
+													  1 -1,
+													  -1.1001 -0.41589,
+													  -1.44891 -0.120743,
+													  -1.44891 0.335395,
+													  -1.1001 0.603712,
+													  1 1 ]
+											orientation	[ 0 1 0  0.0174557,
+													  0 0 1  0 ]
+											scale	[ 1 1,
+													  1 1 ]
+											spine	[ 0 0 0,
+													  0 1 0 ]
+										}
+
+									}
+
+									DEF tornillo Transform {
+										translation	-0.9 0.6 0
+										scale	0.1 0.6 0.1
+										children Shape {
+											appearance	Appearance {
+												material	Material {
+													ambientIntensity	0.2
+													diffuseColor	1 1 1
+												}
+
+											}
+
+											geometry	Box {
+											}
+
+										}
+									}
+								    ]
+							    }
+
+							    DEF p2 Transform {
+								    translation	2.7 0 0
+								    rotation	0 0.707107 0.707107  3.14159
+								    scale	2.4 2.4 2.4
+								    children Shape {
+									    appearance	Appearance {
+										    material	Material {
+											    ambientIntensity	0.2
+											    diffuseColor	0.8 0.0814471 0.0970393
+										    }
+
+									    }
+
+									    geometry	Extrusion {
+										    beginCap	TRUE
+										    endCap	TRUE
+										    ccw	TRUE
+										    convex	TRUE
+										    creaseAngle	0
+										    solid	TRUE
+										    crossSection	[ 1.07327 0.603712,
+												      1.50257 0.281732,
+												      1.50257 -0.308564,
+												      1.04643 -0.576881,
+												      -1 -1,
+												      -1 1,
+												      1.07327 0.603712 ]
+										    orientation	[ 0 0 1  0,
+												      0 0 1  0 ]
+										    scale	[ 1 1,
+												      1 1 ]
+										    spine	[ 0 0 0,
+												      0 1 0 ]
+									    }
+
+								    }
+							    }
+							]
+						}
+					    ]
+				    }
+
+				    DEF modulo2 Transform {
+					    children [ 
+						DEF p1 Transform {
+							translation	7.3 0 0
+							rotation	0 0.707107 0.707107  3.14159
+							scale	2.4 2.4 2.4
+							children [ 
+							    Shape {
+								    appearance	Appearance {
+									    material	Material {
+										    ambientIntensity	0.2
+										    diffuseColor	0.8 0.044556 0.122662
+									    }
+
+								    }
+
+								    geometry	Extrusion {
+									    beginCap	TRUE
+									    endCap	TRUE
+									    ccw	TRUE
+									    convex	TRUE
+									    creaseAngle	0
+									    solid	TRUE
+									    crossSection	[ 1 1,
+											      1 -1,
+											      -1.1001 -0.41589,
+											      -1.44891 -0.120743,
+											      -1.44891 0.335395,
+											      -1.1001 0.603712,
+											      1 1 ]
+									    orientation	[ 0 1 0  0.0174557,
+											      0 0 1  0 ]
+									    scale	[ 1 1,
+											      1 1 ]
+									    spine	[ 0 0 0,
+											      0 1 0 ]
+								    }
+
+							    }
+
+							    DEF tornillo Transform {
+								    translation	-0.9 0.6 0
+								    scale	0.1 0.6 0.1
+								    children Shape {
+									    appearance	Appearance {
+										    material	Material {
+											    ambientIntensity	0.2
+											    diffuseColor	1 1 1
+										    }
+
+									    }
+
+									    geometry	Box {
+									    }
+
+								    }
+							    }
+							]
+						}
+
+						DEF p2 Transform {
+							translation	2.7 0 0
+							rotation	0 0.707107 0.707107  3.14159
+							scale	2.4 2.4 2.4
+							children Shape {
+								appearance	Appearance {
+									material	Material {
+										ambientIntensity	0.2
+										diffuseColor	0.8 0.0814471 0.0970393
+									}
+
+								}
+
+								geometry	Extrusion {
+									beginCap	TRUE
+									endCap	TRUE
+									ccw	TRUE
+									convex	TRUE
+									creaseAngle	0
+									solid	TRUE
+									crossSection	[ 1.07327 0.603712,
+											  1.50257 0.281732,
+											  1.50257 -0.308564,
+											  1.04643 -0.576881,
+											  -1 -1,
+											  -1 1,
+											  1.07327 0.603712 ]
+									orientation	[ 0 0 1  0,
+											  0 0 1  0 ]
+									scale	[ 1 1,
+											  1 1 ]
+									spine	[ 0 0 0,
+											  0 1 0 ]
+								}
+
+							}
+						}
+					    ]
+				    }
+				]
+			}
+
+			DEF modulo1 Transform {
+				children [ 
+				    DEF p1 Transform {
+					    translation	7.3 0 0
+					    rotation	0 0.707107 0.707107  3.14159
+					    scale	2.4 2.4 2.4
+					    children [ 
+						Shape {
+							appearance	Appearance {
+								material	Material {
+									ambientIntensity	0.2
+									diffuseColor	0.8 0.044556 0.122662
+								}
+
+							}
+
+							geometry	Extrusion {
+								beginCap	TRUE
+								endCap	TRUE
+								ccw	TRUE
+								convex	TRUE
+								creaseAngle	0
+								solid	TRUE
+								crossSection	[ 1 1,
+										  1 -1,
+										  -1.1001 -0.41589,
+										  -1.44891 -0.120743,
+										  -1.44891 0.335395,
+										  -1.1001 0.603712,
+										  1 1 ]
+								orientation	[ 0 1 0  0.0174557,
+										  0 0 1  0 ]
+								scale	[ 1 1,
+										  1 1 ]
+								spine	[ 0 0 0,
+										  0 1 0 ]
+							}
+
+						}
+
+						DEF tornillo Transform {
+							translation	-0.9 0.6 0
+							scale	0.1 0.6 0.1
+							children Shape {
+								appearance	Appearance {
+									material	Material {
+										ambientIntensity	0.2
+										diffuseColor	1 1 1
+									}
+
+								}
+
+								geometry	Box {
+								}
+
+							}
+						}
+					    ]
+				    }
+
+				    DEF p2 Transform {
+					    translation	2.7 0 0
+					    rotation	0 0.707107 0.707107  3.14159
+					    scale	2.4 2.4 2.4
+					    children Shape {
+						    appearance	Appearance {
+							    material	Material {
+								    ambientIntensity	0.2
+								    diffuseColor	0.8 0.0814471 0.0970393
+							    }
+
+						    }
+
+						    geometry	Extrusion {
+							    beginCap	TRUE
+							    endCap	TRUE
+							    ccw	TRUE
+							    convex	TRUE
+							    creaseAngle	0
+							    solid	TRUE
+							    crossSection	[ 1.07327 0.603712,
+									      1.50257 0.281732,
+									      1.50257 -0.308564,
+									      1.04643 -0.576881,
+									      -1 -1,
+									      -1 1,
+									      1.07327 0.603712 ]
+							    orientation	[ 0 0 1  0,
+									      0 0 1  0 ]
+							    scale	[ 1 1,
+									      1 1 ]
+							    spine	[ 0 0 0,
+									      0 1 0 ]
+						    }
+
+					    }
+				    }
+				]
+			}
+		    ]
+	    }
+
+	    DEF p1 Transform {
+		    translation	2.2 0 0
+		    rotation	0 0.707107 0.707107  3.14159
+		    scale	2.4 2.4 2.4
+		    children [ 
+			Shape {
+				appearance	Appearance {
+					material	Material {
+						ambientIntensity	0.2
+						diffuseColor	0.8 0.044556 0.122662
+					}
+
+				}
+
+				geometry	Extrusion {
+					beginCap	TRUE
+					endCap	TRUE
+					ccw	TRUE
+					convex	TRUE
+					creaseAngle	0
+					solid	TRUE
+					crossSection	[ 1 1,
+							  1 -1,
+							  -1.1001 -0.41589,
+							  -1.44891 -0.120743,
+							  -1.44891 0.335395,
+							  -1.1001 0.603712,
+							  1 1 ]
+					orientation	[ 0 1 0  0.0174557,
+							  0 0 1  0 ]
+					scale	[ 1 1,
+							  1 1 ]
+					spine	[ 0 0 0,
+							  0 1 0 ]
+				}
+
+			}
+
+			DEF tornillo Transform {
+				translation	-0.9 0.6 0
+				scale	0.1 0.6 0.1
+				children Shape {
+					appearance	Appearance {
+						material	Material {
+							ambientIntensity	0.2
+							diffuseColor	1 1 1
+						}
+
+					}
+
+					geometry	Box {
+					}
+
+				}
+			}
+		    ]
+	    }
+	]
+}
